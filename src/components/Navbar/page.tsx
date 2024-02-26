@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="cursor-pointer w-full flex justify-between items-center px-[8.3vw] fixed top-0 left-0 z-[15] h-24 backdrop-filter backdrop-blur-sm border-b border-black-500 border-opacity-14 bg-gradient-to-b from-gray-300 via-gray-500 to-transparent">
+    <div className="cursor-pointer w-full flex justify-between items-center px-[8.3vw] fixed top-0 left-0 z-[15] h-24 backdrop-filter backdrop-blur-sm border-opacity-14 bg-[rgba(0,0,0,0.01)]">
       <div>
         <h1>
           <svg
@@ -35,13 +35,14 @@ const Navbar = () => {
           (text, index) => (
             <h1
               key={index}
-              className="text-sm font-semibold text-[#FFF] uppercase"
+              className="text-sm font-semibold text-[#FFF] uppercase hover:underline"
             >
               {text}
             </h1>
           )
         )}
       </div>
+
       <div className="w-[150px] h-12 bg-[#b89774] flex items-center pl-[35px] pr-[17px] gap-5 md:hidden">
         <button className="text-white text-sm font-semibold">Contact </button>
         <p>

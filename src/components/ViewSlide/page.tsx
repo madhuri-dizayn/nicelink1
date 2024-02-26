@@ -42,13 +42,15 @@ const ViewSlide = () => {
           </div>
         </div>
 
-        <div className=" relative z-5 bg-[#E2E2E2] w-[41vw] h-[fit-content] mt-[8vh] md:w-full">
-          <Image
-            src={Chair}
-            alt="chair"
-            objectFit="cover"
-            className="pt-28 flex items-center justify-center w-[100%] h-[auto] object-contain md:w-full"
-          />
+        <div className="relative z-5 bg-[#E2E2E2] w-[41vw] h-[fit-content] mt-[8vh] md:w-full">
+          <div>
+            <Image
+              src={Chair}
+              alt="chair"
+              objectFit="cover"
+              className="pt-28 flex items-center justify-center w-[100%] h-[auto] object-contain md:w-full"
+            />
+          </div>
         </div>
       </div>
     </div>

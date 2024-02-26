@@ -128,6 +128,8 @@ const Footer = () => {
           <p className="text-[#DFDFDF] text-base font-semibold">Textiles</p>
         </div>
 
+        <div className="h-[1px] flex justify-center items-center w-[51px] bg-[#E4E4E4] m-[auto] mb-[30px] mt-[30px]"></div>
+
         <div className="mt-9 flex justify-center items-center ">
           <p className="text-white text-xs font-semibold uppercase">
             Follow Us

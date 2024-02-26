@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface AccordionProps {
   handleChange: () => void;
@@ -8,18 +8,18 @@ interface AccordionProps {
   visible?: boolean;
 }
 
-const Accordion = ({
-  handleChange,
-  selected,
-  title,
-  description,
-}: AccordionProps) => {
+const Accordion = ({ title, description }: AccordionProps) => {
+  const [selected, setSelected] = useState(false);
+
+  const toggleSelected = () => {
+    setSelected(!selected);
+  };
   return (
     <div
       className={`flex flex-col cursor-pointer bg-[#1d1d1d] pt-4 mb-3 overflow-hidden ${
         selected ? "selected-style" : "mb-3 bg-[unset]"
       }`}
-      onClick={handleChange}
+      onClick={toggleSelected}
     >
       <div className="w-full flex flex-col pl-4">
         <div className="w-full flex pr-3 justify-between mb-3 items-center">

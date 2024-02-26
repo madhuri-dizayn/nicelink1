@@ -22,6 +22,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        nunito: ["var(--font-nunito)", "sans-serif"],
+      },
     },
     screens: {
       md: { max: "767px" },

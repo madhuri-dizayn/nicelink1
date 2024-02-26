@@ -25,8 +25,8 @@ const SliderImage = () => {
   };
 
   return (
-    <div className="max-w-[1155px] relative mt-24 cursor-pointer mx-auto px-[24px]">
-      <Slider {...settings} className="w-full">
+    <div className="max-w-[1155px] relative cursor-pointer mx-auto md:px-[24px]">
+      <Slider {...settings} className="w-full focus-visible:outline-none">
         {images.map((image, index) => (
           <div key={index}>
             <Image

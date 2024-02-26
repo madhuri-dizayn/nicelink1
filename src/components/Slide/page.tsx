@@ -16,8 +16,17 @@ const Slide = () => {
           every exquisite detail.
         </p>
 
-        <div className="w-full flex justify-center md:mt-11">
+        {/* <div className="w-full flex justify-center md:mt-11">
           <button className="w-[213px] h-10 border border-[#b89774] justify-center items-center text-sm font-semibold">
+            Explore
+          </button>
+        </div> */}
+        <div className="w-full flex justify-center md:mt-11">
+          <button className="w-[213px] h-10 justify-center items-center text-sm font-semibold relative overflow-hidden">
+            <span
+              className="absolute inset-0 border-t border-b border-[#b89774] md:border
+            border-[#b89774]"
+            ></span>
             Explore
           </button>
         </div>

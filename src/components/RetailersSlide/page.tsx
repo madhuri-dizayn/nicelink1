@@ -24,11 +24,12 @@ const data = [
 
 const RetailersSlide = () => {
   const [selected, setSelected] = useState(0);
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
 
   const handleClick = (index: number) => {
     setSelected(index);
-    setVisible(true);
+
+    // setVisible(true);
   };
 
   return (
@@ -48,7 +49,7 @@ const RetailersSlide = () => {
           </div>
           <p className="text-white text-5xl font-normal">Choose Us?</p> */}
 
-          <h5 className="text-5xl flex items-center flex-wrap text-white relative before:content-normal before:relative before:inline-block before:left-0 before:w-[32px] md:before:hidden before:h-[6px] before:bg-white">
+          <h5 className="text-5xl flex items-center gap-2 flex-wrap text-white relative before:content-normal before:relative before:inline-block before:left-0 before:w-[32px] md:before:hidden before:h-[6px] before:bg-white">
             Why Retailers <span className="block">Choose Us?</span>
           </h5>
 
@@ -72,7 +73,7 @@ const RetailersSlide = () => {
           {data.map((item, index) => (
             <div key={index} className="mt-5">
               <Accordion
-                visible={visible}
+                // visible={visible}
                 title={item.title}
                 description={item.description}
                 selected={selected === index ? true : false}
@@ -80,14 +81,53 @@ const RetailersSlide = () => {
               />
             </div>
           ))}
-          <div className="flex mt-12 gap-6 md:hidden">
-            <button className="w-[190px] bg-[#B89774] h-[48px] flex items-center text-white pl-9 pr-4">
-              Explore Style
-            </button>
 
-            <button className="w-[190px] bg-[#4F4F4F] h-[48px] flex items-center text-white pl-9 pr-4">
-              Furniture
-            </button>
+          <div className="flex gap-6 md:hidden">
+            <div className="w-[200px] bg-[#b89774] flex items-center pl-[35px] pr-[17px] gap-5 mt-6 h-12 md:w-full">
+              <button className="text-white text-sm font-semibold">
+                Explore Style
+              </button>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.1657 10L11.1657 5M16.1657 10L11.1657 15M16.1657 10H4.49902"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </p>
+            </div>
+
+            <div className="w-[200px] bg-[#4F4F4F] flex items-center pl-[35px] pr-[17px] gap-5 mt-6 h-12 md:w-full">
+              <button className="text-white text-sm font-semibold">
+                Furniture
+              </button>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.1657 10L11.1657 5M16.1657 10L11.1657 15M16.1657 10H4.49902"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </p>
+            </div>
           </div>
         </div>
       </div>
