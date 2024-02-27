@@ -38,7 +38,7 @@ const ProductSlide = () => {
             <p className="text-[#FFF] text-[64px] font-bold md:text-[32px]">
               23+
             </p>
-            <p className="text-[#FFF] text-sm font-normal w-[146px] md:text-[8px]">
+            <p className="text-[#FFF] text-sm font-normal rounded-full w-[146px] md:text-[8px] md:w-[60px] md:rounded-full">
               Years Partnered with Top 100 Retailers
             </p>
           </div>
