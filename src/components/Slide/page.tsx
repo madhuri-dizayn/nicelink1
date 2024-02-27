@@ -8,7 +8,7 @@ const Slide = () => {
       </h1>
 
       <div className="  md:w-full max-w-[800px] w-[53.10vw] ">
-        <p className="text-[#535353] text-base font-normal mb-3 md:text-[#7B7B7B]">
+        <p className="text-[#535353] text-base text-center font-normal mb-3 md:text-[#7B7B7B] md:text-left">
           At Nice Link, we seamlessly blend artistic vision with cutting-edge
           technology to create furniture that not only mesmerizes with its
           aesthetics but also enhances your everyday life. Experience the
