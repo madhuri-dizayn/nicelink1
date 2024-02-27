@@ -8,7 +8,7 @@ const Slide = () => {
       </h1>
 
       <div className="  md:w-full max-w-[800px] w-[53.10vw] ">
-        <p className="text-[#535353] text-base text-center font-normal mb-3 md:text-[#7B7B7B]">
+        <p className="text-[#535353] text-base font-normal mb-3 md:text-[#7B7B7B]">
           At Nice Link, we seamlessly blend artistic vision with cutting-edge
           technology to create furniture that not only mesmerizes with its
           aesthetics but also enhances your everyday life. Experience the
@@ -16,11 +16,6 @@ const Slide = () => {
           every exquisite detail.
         </p>
 
-        {/* <div className="w-full flex justify-center md:mt-11">
-          <button className="w-[213px] h-10 border border-[#b89774] justify-center items-center text-sm font-semibold">
-            Explore
-          </button>
-        </div> */}
         <div className="w-full flex justify-center md:mt-11">
           <button className="w-[213px] h-10 justify-center items-center text-sm font-semibold relative overflow-hidden">
             <span
